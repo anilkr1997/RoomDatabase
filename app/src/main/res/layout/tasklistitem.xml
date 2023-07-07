@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:layout_margin="5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="10dp"
+    android:elevation="5dp"
+    app:cardElevation="5dp"
+    app:contentPaddingRight="10dp"
+    app:contentPaddingLeft="10dp"
+    app:contentPaddingTop="10dp"
+    app:contentPaddingBottom="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:minHeight="50dp"
+            android:padding="5dp"
+            android:scaleType="fitXY"
+            android:src="@android:drawable/ic_input_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TableLayout
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/titel"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:textSize="15sp"
+                android:padding="5dp"
+                android:text="Name"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/descrepthion"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:padding="2dp"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_vertical"
+                android:textSize="12sp"
+                android:text="Phone Number"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+
+        </TableLayout>
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/delet"
+            android:minHeight="50dp"
+            android:padding="5dp"
+            android:scaleType="fitXY"
+            android:src="@android:drawable/ic_menu_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.cardview.widget.CardView>
