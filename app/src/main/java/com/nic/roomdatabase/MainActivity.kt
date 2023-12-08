@@ -15,6 +15,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+                setSupportActionBar(Toolbar(this))
+
         val navController = findNavController(R.id.nav_host_fragment_activity_bottem_navigation)
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
